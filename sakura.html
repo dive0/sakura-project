@@ -80,7 +80,7 @@ Kimon Berlin
         left: 1000px;
         top: 200px;
         opacity: 1;
-        transform: rotateY(30deg), rotateX(30deg);
+        transform: rotateY(30deg) rotateX(30deg);
       }
       25% {
         left: 700px;
@@ -108,6 +108,8 @@ Kimon Berlin
     #leaf2 {
       width: 40px;
       height: 30px;
+      left: 1200px;
+      top: 100px;
       position: absolute;
       animation-name: blossom2;
       animation-duration: 32s;
@@ -119,14 +121,29 @@ Kimon Berlin
       0% {
         left: 1200px;
         top: 100px;
+        opacity: 1;
+        transform: rotateY(20deg) rotateX(30deg);
       }
       25% {
         left: 1000px;
         top: 300px;
+        opacity: 1;
       }
       50% {
-        
+        left: 900px;
+        top: 500px;
+        opacity: 1;
+        transform: rotateY(140deg) rotateX(120deg);
       }
+      75% {
+        left: 700px;
+        top: 610px;
+      }
+       100% {
+         left: 600px;
+         top: 690px;
+         opacity: 0;
+       }
     }
     
   </style>
