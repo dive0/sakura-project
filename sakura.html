@@ -11,11 +11,11 @@ Kimon Berlin
 
 <head>
   <meta charset="UTF-8">
-  <title>HTML5 Media</title>
+  <title>Sakura</title>
   <style>
     #back-image1 {
-      background: url(images/tree.png) no-repeat right, url(images/Daigo-ji-Temple.jpg) no-repeat center fixed;
-      background-size: 400px 700px, cover;
+      background: url(images/tree.png) no-repeat right, url(images/Daigo-ji-Temple.jpg) no-repeat center fixed; /*This create 2 backgrounds. One will be to the right side of the screen while the second one will be at the center. The second one's view will not move when scroll up or down on the website.*/
+      background-size: 400px 700px, cover; /*This will set the size of the background and having them cover the full screeen*/
       width: 1300px;
       height: 700px;
     }
@@ -26,25 +26,23 @@ Kimon Berlin
       text-shadow: 0 0 25px blue;
       animation-name: title;
       animation-duration: 3s;
-      transition: width 10s;
-      transition-timing-function: ease-out;
-      display: inline-block;
+      display: inline-block; /*The text elements can be on the same line*/
     }
 
-    @keyframes title {
-      0% {
+    @keyframes title { /*The animation for the set element*/
+      0% { /*no rotation in the beginning*/
         transform: rotateY(0deg);
-      }
-      25% {
+      } 
+      25% { /*After a fourth on the duration time, the text rotate 90 degrees*/
         transform: rotateY(90deg);
-      }
-      50% {
+      } 
+      50% { /*After half of the time*/
         transform: rotateY(180deg);
       }
-      75% {
+      75% { /*After three fourth on the time*/
         transform: rotateY(270deg);
       }
-      100% {
+      100% { /*After 3 seconds*/
         transform: rotateY(360deg);
       }
     }
@@ -52,15 +50,15 @@ Kimon Berlin
     #text-back {
       width: 50px;
       height: 25px;
-      background: linear-gradient(to right, rgba(255, 181, 255, 0), rgba(255, 181, 255, 1));
+      background: linear-gradient(to right, rgba(255, 181, 255, 0), rgba(255, 181, 255, 1)); /*Sets the background of the div with hover from transparent to pink with the direction on left to right*/
       font-size: 20px;
       position: top;
       display: inline-block;
-      padding-top: 10px;
+      padding-top: 10px; /*Sets the space between the text and the border of the div to 10 pixels*/
       color: white;
-      text-shadow: 5px 5px 6px black, 0 0 5px yellow;
-      transition: width 3s;
-      transition-timing-function: ease-out;
+      text-shadow: 5px 5px 6px black, 0 0 5px yellow; /*Sets the shadow to black and the shadow around the text will be yellow*/
+      transition: width 3s; /*Changes the width of the div for 3 seconds*/
+      transition-timing-function: ease-out; /*This will have a slow end when moved*/
     }
 
     #text-back:hover {
@@ -68,18 +66,18 @@ Kimon Berlin
     }
 
     #leaf1 {
-      position: absolute;
+      position: absolute; /*Position of the image will not be affected by other elements*/
       animation-name: blossom1;
       animation-duration: 25s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      animation-iteration-count: infinite; /*The animation will continue infinite times*/
+      animation-timing-function: linear; /*The image will move at the same speed*/
     }
 
-    @keyframes blossom1 {
+    @keyframes blossom1 { 
       0% {
-        left: 1000px;
-        top: 200px;
-        opacity: 1;
+        left: 1000px; /*Amount of pixels away from the left side of the screen*/
+        top: 200px; /*Amount of pixels away from the top of the screen*/
+        opacity: 1; /*No transparency*/
         transform: rotateY(30deg) rotateX(30deg);
       }
       25% {
@@ -101,7 +99,7 @@ Kimon Berlin
       100% {
         left: 200px;
         top: 690px;
-        opacity: 0;
+        opacity: 0; /*Completely transparent*/
       }
     }
     
@@ -146,6 +144,44 @@ Kimon Berlin
        }
     }
     
+    #leaf3 {
+      position: absolute;
+      animation-name: blossom3;
+      animation-duration: 14s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    @keyframes blossom3 {
+      0% {
+        left: 1200px;
+        top: 300px;
+        opacity: 1;
+      }
+      25% {
+        left: 900px;
+        top: 400px;
+        opacity: 1;
+        transform: rotateY(100deg) rotateX(110deg);
+      }
+      50% {
+        left: 600px;
+        top: 500px;
+        opacity: 1;
+        transform: rotateY(200deg) rotateX(190deg);
+      }
+      75% {
+        left: 100px;
+        top: 600px;
+        transform: rotateY(290deg) rotateX(290deg);
+      }
+      100% {
+        left: 0px;
+        top: 650px;
+        opacity: 0;
+      }
+    }
+    
   </style>
 </head>
 
@@ -155,6 +191,8 @@ Kimon Berlin
     <h1>A Place To See Sakura Trees</h1>
     <img id="leaf1" src="images/leaf-1.png"></img>
     <img id="leaf2" src="images/leaf-2.png"></img>
+    <img id="leaf3" src="images/leaf-1.png"></img>
+
   </div>
 
   </div>
