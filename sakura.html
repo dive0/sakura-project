@@ -182,6 +182,45 @@ Kimon Berlin
       }
     }
     
+    #leaf4 {
+      width: 40px;
+      height: 30px;
+      position: absolute;
+      animation-name: blossom4;
+      animation-duration: 17s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    @keyframes blossom4{
+      0% {
+        left: 400px;
+        top: 0px;
+        opacity: 1;
+      }
+      25% {
+        left: 300px;
+        top: 200px;
+        opacity: 1;
+        transform: rotateY(70deg) rotateX(100deg);
+      }
+      50% {
+        left: 200px;
+        top: 300px;
+        opacity: 1;
+        transform: rotateY(160deg) rotateX(160deg);
+      }
+      75% {
+        left: 100px;
+        top: 350px;
+        transform: rotateY(250deg) rotateX(230deg);
+      }
+      100% {
+        left: 0px;
+        top: 400px;
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 
@@ -192,7 +231,7 @@ Kimon Berlin
     <img id="leaf1" src="images/leaf-1.png"></img>
     <img id="leaf2" src="images/leaf-2.png"></img>
     <img id="leaf3" src="images/leaf-1.png"></img>
-
+    <img id="leaf4" src="images/leaf-2.png"></img>
   </div>
 
   </div>
